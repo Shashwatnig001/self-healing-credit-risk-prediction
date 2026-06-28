@@ -1,0 +1,110 @@
+# ==========================
+# Core Data Science
+# ==========================
+numpy
+pandas
+scipy
+
+# ==========================
+# Visualization
+# ==========================
+matplotlib
+seaborn
+plotly
+
+# ==========================
+# Exploratory Data Analysis
+# ==========================
+ydata-profiling
+sweetviz
+missingno
+
+# ==========================
+# Machine Learning
+# ==========================
+scikit-learn
+xgboost
+lightgbm
+catboost
+imbalanced-learn
+
+# ==========================
+# Explainable AI
+# ==========================
+shap
+lime
+
+# ==========================
+# Hyperparameter Tuning
+# ==========================
+optuna
+
+# ==========================
+# Experiment Tracking
+# ==========================
+mlflow
+
+# ==========================
+# Data Validation
+# ==========================
+great-expectations
+
+# ==========================
+# Drift Detection
+# ==========================
+evidently
+
+# ==========================
+# API
+# ==========================
+fastapi
+uvicorn
+pydantic
+
+# ==========================
+# Frontend
+# ==========================
+streamlit
+
+# ==========================
+# Model Serialization
+# ==========================
+joblib
+
+# ==========================
+# Logging
+# ==========================
+loguru
+
+# ==========================
+# Environment Variables
+# ==========================
+python-dotenv
+
+# ==========================
+# AWS
+# ==========================
+boto3
+
+# ==========================
+# Database
+# ==========================
+sqlalchemy
+
+# ==========================
+# Testing
+# ==========================
+pytest
+
+# ==========================
+# Notebook
+# ==========================
+jupyter
+ipykernel
+
+# ==========================
+# Utilities
+# ==========================
+tqdm
+pyyaml
+requests
