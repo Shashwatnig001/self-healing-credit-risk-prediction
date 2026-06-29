@@ -1,0 +1,20 @@
+from src.preprocessing.preprocess import DataPreprocessor
+import pandas as pd
+from src.utils.config import ConfigManager
+
+config = ConfigManager().get()
+
+train_path = config["data"]["train_path"]
+df = pd.read_csv(train_path)
+
+processor = DataPreprocessor()
+
+df = processor.preprocess(df)
+
+x , y = processor.split_features_target(df)
+
+processor.save_scalers()
+
+print(x.shape)
+
+print(y.shape)
