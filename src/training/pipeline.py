@@ -58,9 +58,12 @@ print(f"Best Model : {name}")
 print(f"Best F1 : {score}")
 
 
+evaluator.generate_report(results=results)
+
 joblib.dump(
     model,
     config["artifacts"]["best_model"]
 )
 
 print("Best model saved.")
+

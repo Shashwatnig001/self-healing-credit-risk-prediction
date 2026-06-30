@@ -5,6 +5,8 @@ from sklearn.metrics import (
     f1_score,
     roc_auc_score
 )
+import json
+
 
 
 class ModelEvaluator:
@@ -30,3 +32,17 @@ class ModelEvaluator:
         }
 
         return metrics
+    
+
+
+    def generate_report( self, results, save_path="reports/evaluation_report.json"):
+        report = {}
+        for model_name, info in results.items():
+            report[model_name] = info["metrics"]
+        with open(save_path, "w") as file:
+            json.dump(
+                report,
+                file,
+                indent=4
+            )
+        print("Evaluation report saved successfully.")   
